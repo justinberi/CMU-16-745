@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Lectures
+  chapters:
+  - file: lecture_1
+  - file: lecture_7
+  - file: references
+- caption: About these notes
+  chapters:
+  - file: how_this_was_made
+  - file: cheat_sheet

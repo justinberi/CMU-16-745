@@ -1,0 +1,29 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Build Docker
+        run: docker build . --file Dockerfile --tag optimalcontrol:$GITHUB_SHA
+      - name: Build html
+        run: docker run --user root -v $(pwd):$(pwd) -w $(pwd) optimalcontrol:$GITHUB_SHA jupyter-book build optimalcontrol
+      - name: Archive html
+        uses: actions/upload-artifact@v3
+        with:
+          name: html
+          path: optimalcontrol/_build/html
+          
+          
+        
