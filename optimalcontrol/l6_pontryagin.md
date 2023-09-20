@@ -1,18 +1,12 @@
 # Pontryagin's Minumum Principle
 
-
-```{admonition} TODO
-:class: toggle
-* Make this more clear and relevant to the flow.*
-```
-
 Equivalently, "Pontryagin's Maximum Pricincple"
 
 ## Motivation
 
-For a optimal control problem, how do we know if the solution is optimal? 
+How do we solve an optimal control problem? Let's begin by finding what conditions determine if a solution is optimal! This is Pontryagin's Minimum Principle.
 
-This principle provides a set of first order necessary conditions for deterministic optimal control problems. In discrete-time, this is a special case of the KKT conditions.
+This principle provides a set of first order necessary conditions for deterministic optimal control problems. In discrete-time, these are a special case of the KKT conditions.
 
 ## Theory
 
@@ -81,3 +75,8 @@ $$
 * In continuous time $\lambda(t)$ is called the costate trajectory.
 * These methods have largely fallen out of favour as computers have gotten faster.
 
+## Intuition
+
+Great now we have some recursive conditions that describe the solution to an optimal control problem. But how do we leverage those to solve the problem? 
+
+The next chapter will demonstrate the solution process on an LQR problem formulation.

@@ -9,7 +9,7 @@ parts:
   - file: lecture_1
   - file: l6_deterministic_optimal_control
   - file: l6_pontryagin
-  - file: lecture_7
+  - file: l7_lqr_and_solutions
   - file: references
 - caption: About these notes
   chapters:
