@@ -7,6 +7,7 @@ parts:
 - caption: Lectures
   chapters:
   - file: lecture_1
+  - file: l6_deterministic_optimal_control
   - file: lecture_7
   - file: references
 - caption: About these notes
