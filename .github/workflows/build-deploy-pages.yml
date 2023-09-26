@@ -89,7 +89,6 @@ jobs:
   # Deployment job (if build-book is run)
   deploy-pages:
     needs: build-book
-    if: ${{ always() && !failure() && !cancelled() }} # when none of the needed jobs fail or are cancelled (skipped or successful jobs are ok).
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
