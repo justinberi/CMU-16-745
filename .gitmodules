@@ -10,3 +10,6 @@
 [submodule "originals/recitations"]
 	path = originals/recitations
 	url = https://github.com/Optimal-Control-16-745/recitations.git
+[submodule "originals/HW2_S23"]
+	path = originals/HW2_S23
+	url = git@github.com:justinberi/HW2_S23.git
