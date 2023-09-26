@@ -10,6 +10,9 @@ parts:
   - file: l6_deterministic_optimal_control
   - file: l6_pontryagin
   - file: l7_lqr_and_solutions
+  - file: l8_ihlqr
+  - file: l8_controllability
+  - file: l8_bellmans
   - file: references
 - caption: About these notes
   chapters:
