@@ -16,3 +16,6 @@
 [submodule "originals/HW3_S23"]
 	path = originals/HW3_S23
 	url = git@github.com:justinberi/HW3_S23.git
+[submodule "originals/HW4_S23"]
+	path = originals/HW4_S23
+	url = https://github.com/justinberi/HW4_S23
